@@ -8,7 +8,11 @@
   <!-- <listener>
   	<listener-class>com.amos.web.InitSpringFactoryListner</listener-class>
   </listener> -->
-  
+  <!-- 使用自定义的文件名和路径 -->
+  <context-param>
+      <param-name>contextConfigLocation</param-name>
+      <param-value>classpath:bean.xml</param-value>
+  </context-param>
   <!-- 使用Spring提供的监听器来启动servlet容器 -->
   <listener>
       <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
