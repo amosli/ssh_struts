@@ -22,7 +22,9 @@ public class HelloServlet extends HttpServlet {
 		// hello
 		// 获得hello组件需要通过容器来查找
 		//方案1.每次请求都会创建一个容器，不可取！
-		ApplicationContext acx = new ClassPathXmlApplicationContext("bean.xml");
+//		ApplicationContext acx = new ClassPathXmlApplicationContext("bean.xml");
+		//方案2，到一个ServletContext变量中去取容器
+		ApplicationContext acx = (ApplicationContext) this.getServletContext().getAttribute("SpringAc");
 		hello = acx.getBean(IHello.class);
 		String result = hello.sayHi();
 		System.out.println("result:" + result);

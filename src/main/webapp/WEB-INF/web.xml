@@ -4,6 +4,9 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <listener>
+  	<listener-class>com.amos.web.InitSpringFactoryListner</listener-class>
+  </listener>
   <servlet>
   	<servlet-name>HelloServlet</servlet-name>
   	<display-name>HelloServlet</display-name>
