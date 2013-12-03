@@ -4,8 +4,14 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
-  <listener>
+	<!-- 自己写一个监听器来启动servlet 容器 -->
+  <!-- <listener>
   	<listener-class>com.amos.web.InitSpringFactoryListner</listener-class>
+  </listener> -->
+  
+  <!-- 使用Spring提供的监听器来启动servlet容器 -->
+  <listener>
+      <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
   </listener>
   <servlet>
   	<servlet-name>HelloServlet</servlet-name>

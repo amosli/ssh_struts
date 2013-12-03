@@ -11,7 +11,6 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  *
  */
 public class InitSpringFactoryListner implements ServletContextListener {
-
     /**
      * Default constructor. 
      */
