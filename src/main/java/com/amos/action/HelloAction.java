@@ -10,6 +10,9 @@ import com.opensymphony.xwork2.ActionContext;
 
 public class HelloAction {
 	private IHello hello;
+	public void setHello(IHello hello) {
+		this.hello = hello;
+	}
 	public String execute(){
 		ApplicationContext acx = WebApplicationContextUtils.getWebApplicationContext(ServletActionContext.getServletContext());
 		hello = acx.getBean(IHello.class);

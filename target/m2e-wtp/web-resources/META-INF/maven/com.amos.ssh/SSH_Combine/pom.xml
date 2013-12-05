@@ -8,6 +8,12 @@
 	<name>SSH_Combine Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>
+	<!-- 	<dependency>
+			<groupId>org.apache.struts</groupId>
+			<artifactId>struts2-spring-plugin</artifactId>
+			<version>2.3.15</version>
+		</dependency> -->
+
 		<dependency>
 			<groupId>org.apache.struts</groupId>
 			<artifactId>struts2-core</artifactId>
